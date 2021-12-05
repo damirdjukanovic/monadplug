@@ -27,7 +27,7 @@ export default function ProfileSettingsCard(props) {
 
   const renderGeneral = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput label="First name" />
         <ProfileSettingsInput label="Last name" />
         <ProfileSettingsInput
@@ -37,33 +37,33 @@ export default function ProfileSettingsCard(props) {
           placeholder="Choose country"
         />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderPassword = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput label="Password" inputType="password" />
         <ProfileSettingsInput label="Repeat password" inputType="password" />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderPin = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput label="Pin" inputType="password" />
         <ProfileSettingsInput label="Repeat pin" inputType="password" />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderSocial = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput
           label="Facebook"
           placeholder="Facebook profile link"
@@ -85,13 +85,13 @@ export default function ProfileSettingsCard(props) {
           placeholder="Instagram profile link"
         />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderMessages = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput label="Skype" placeholder="Skype profile link" />
         <ProfileSettingsInput
           label="Telegram"
@@ -102,13 +102,13 @@ export default function ProfileSettingsCard(props) {
           placeholder="Whatsapp phone number"
         />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderCompany = () => {
     return (
-      <>
+      <form>
         <ProfileSettingsInput label="Company name" placeholder="Company name" />
         <ProfileSettingsInput
           label="Country"
@@ -124,13 +124,13 @@ export default function ProfileSettingsCard(props) {
         />
         <ProfileSettingsInput label="Tax" placeholder="Tax" />
         <ProfileSettingsButton />
-      </>
+      </form>
     );
   };
 
   const renderPayment = () => {
     return (
-      <>
+      <form>
         <div className={s.paymentCardTop}>
           <div
             onClick={() => handleActive("wire")}
@@ -157,7 +157,7 @@ export default function ProfileSettingsCard(props) {
           type="select"
           options={payment}
         />
-      </>
+      </form>
     );
   };
 
