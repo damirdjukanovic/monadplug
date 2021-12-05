@@ -1,0 +1,40 @@
+.paymentCardTop {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.paymentCardTop div {
+  padding: 1rem 0px;
+  font-size: 1rem;
+  border-radius: 0.267rem;
+  background-color: #f2f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #475f7b;
+  transition: 0.2s;
+}
+
+.active {
+  border-color: #f4730e;
+  background-color: #f68f3f !important;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.6rem;
+  box-shadow: 0 2px 4px 0 rgba(246, 143, 63, 0.5);
+}
+
+.profileSettingsCard {
+  width: 100%;
+}
+
+.profileSettingsCard hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #dfe3e7;
+}

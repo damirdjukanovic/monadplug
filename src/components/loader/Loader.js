@@ -1,6 +1,13 @@
 import React from "react";
-import s from "./Loader.module.css";
+import Skeleton from "@mui/material/Skeleton";
 
-export default function Loader() {
-  return <div className={s.loader}></div>;
+export default function Loader({ children }) {
+  return (
+    <Skeleton
+      variant="text"
+      style={{ minWidth: "100%", backgroundColor: "white" }}
+    >
+      {children}
+    </Skeleton>
+  );
 }

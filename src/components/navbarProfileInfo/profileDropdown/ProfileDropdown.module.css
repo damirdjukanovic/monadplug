@@ -1,0 +1,52 @@
+.ProfileDropdown {
+  background: #ffff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 45px;
+  right: 6px;
+  padding-top: 0.5rem;
+  border: 1px solid #dfe3e7;
+  border-radius: 5px;
+}
+
+.profileLink {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  clear: both;
+  font-weight: 400;
+  color: #475f7b;
+  text-align: inherit;
+}
+
+.profileLink:hover {
+  background: rgb(242, 244, 244);
+}
+
+.profileLink a {
+  text-transform: uppercase;
+}
+
+.dropdownDivider {
+  width: 100%;
+  height: 0.5rem;
+}
+
+.profileLink svg {
+  fill: orange;
+  margin-right: 0.6rem;
+}
+
+.ProfileDropdown a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #475f7b;
+}
+
+#bottomLink {
+  border-top: 1px solid #dfe3e7;
+}

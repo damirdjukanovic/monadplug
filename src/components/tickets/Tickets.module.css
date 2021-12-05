@@ -1,11 +1,11 @@
 .tickets {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid #dfe3e7;
   position: relative;
   overflow: hidden;
+  border: 1px solid #dfe3e7;
 }
 
 .ticketsTop {
@@ -29,7 +29,18 @@
   align-items: center;
   justify-content: center;
   margin-left: 10px;
-  height: 60%;
+  height: 100%;
+  cusor: pointer;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background: #444054;
+}
+
+.icon:hover svg {
+  fill: white;
 }
 
 .icon svg {
@@ -37,15 +48,16 @@
 }
 
 .searchBar {
-  height: 60px;
-  width: 76%;
+  height: 44px;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-left: 15px;
-  padding: 5px;
+  padding: 0px 5px;
   border: 1px solid #dfe3e7;
   border-radius: 0.3rem;
   position: relative;
+  transition: 0.3s;
 }
 
 .input:focus {
@@ -81,6 +93,10 @@
   padding-left: 7px;
 }
 
+.searchBar:focus {
+  box-shadow: -3px 6px 10px 0 rgb(25 42 70 / 13%);
+}
+
 input:focus .searchBar svg {
   color: orange;
 }
@@ -91,7 +107,7 @@ input:focus .searchBar svg {
   cursor: pointer;
 }
 
-.arrowRightContainer {
+.arrowContainer {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -103,76 +119,41 @@ input:focus .searchBar svg {
   margin-left: 7px;
 }
 
-.newTicket {
-  height: 100%;
-  width: clamp(300px, 40%, 50%);
+.backdrop {
   position: absolute;
-  z-index: 10;
   top: 0;
-  right: -100%;
-  transition: 0.5s;
-  background: #fff;
-  padding: 15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000e1;
+  z-index: 9;
 }
 
-.showTicket {
-  right: 0 !important;
+.iconContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.newTicketTop {
+.ticketsTopRight {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  width: 100%;
 }
 
-.newTicketTop h4 {
-  margin-left: 10px;
-  font-weight: 400;
-  letter-spacing: 0.05rem;
-  font-size: 1.2rem;
-  margin-bottom: 1.2 rem;
-  text-transform: capitalize;
-}
+@media (max-width: 768px) {
+  .ticketsTop {
+    flex-wrap: wrap;
+  }
 
-.form label {
-  color: #475f7b;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.newTicketTop svg {
-  margin-left: auto;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form input,
-.form textarea {
-  border: 1px solid #dfe3e7;
-  color: #475f7b;
-  border-radius: 5px;
-}
-
-.form select {
-  text-color: #475f7b;
-}
-
-.form fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  margin-top: 20px;
-}
-
-.subjectInput,
-.form .offer,
-.form .type {
-  height: 40px;
-}
-
-.form textarea {
-  height: 122px;
+  .ticketsTopIcons {
+    order: 2;
+    margin-top: 10px;
+  }
+  .ticketsTopRight {
+    order: 1;
+  }
+  .searchBar {
+    margin-left: 10px;
+  }
 }

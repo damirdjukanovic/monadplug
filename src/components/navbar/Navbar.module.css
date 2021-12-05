@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #f2f4f4;
+  width: 100%;
+  height: 67px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  z-index: 20;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.active {
+  background-color: #ffff;
+  box-shadow: -3px 6px 10px 0 rgb(25 42 70 / 13%);
+}
+
+.popupGroup {
+  display: flex;
+
+  align-items: center;
+}

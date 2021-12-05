@@ -1,0 +1,78 @@
+.NavbarProfileInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.NavbarProfileInfo p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  text-align: right;
+}
+
+.profilePicture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: -1px 3px 2px 0 rgb(25 42 70 / 13%);
+}
+
+.profilePicture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  color: #727e8c;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.email {
+  color: #828d99;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.7rem;
+}
+
+.fullscreen {
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen svg {
+  margin-right: 2rem;
+
+  height: 30px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.NavbarProfileInfo svg:hover {
+  fill: orange;
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .profileInfo,
+  .fullscreen {
+    display: none;
+  }
+}

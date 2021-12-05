@@ -1,0 +1,168 @@
+.newTicket {
+  height: 100%;
+  width: clamp(320px, 40%, 50%);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: -100%;
+  transition: 0.5s;
+  background: #fff;
+  padding: 15px;
+  padding-bottom: 30px;
+  overflow-y: auto;
+}
+
+.showTicket {
+  right: 0 !important;
+}
+
+.newTicketTop {
+  display: flex;
+  align-items: center;
+}
+
+.newTicketTop h4 {
+  margin-left: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.2 rem;
+  text-transform: capitalize;
+}
+
+.form label {
+  color: #475f7b;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.newTicketTop svg {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea,
+.form select {
+  border: 1px solid #dfe3e7;
+  color: #475f7b;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form select {
+  text-color: #475f7b;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top: 15px;
+}
+
+.subjectInput,
+.form .offer,
+.form .type {
+  height: 40px;
+}
+
+.offer {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.form textarea {
+  height: 122px;
+  font-family: inherit !important;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 5px 10px;
+  font-size: 1rem !important;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #475f7b;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.form select:active {
+  border-color: orange !important;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: orange !important;
+  box-shadow: -3px 6px 10px 0 rgb(25 42 70 / 13%) !important;
+  outline: none;
+}
+
+.newTicketBottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-right: 10px;
+}
+
+.newTicketBottom button {
+  box-shadow: 0 2px 4px 0 rgb(90 141 238 / 60%);
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 0 solid rgba(0, 0, 0, 0);
+  padding: 0.467rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border-radius: 0.267rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-transform: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #e6eaee;
+  color: #3f6df6;
+  margin-right: 1rem;
+}
+
+.submitButton {
+  border-color: #f4730e;
+  background-color: #f68f3f;
+  color: #fff;
+}
+
+.newTicketBottom button:hover {
+  transition: 0.3s;
+  transform: translateY(-10%);
+}
+
+.submitButton:hover {
+  background: #fdb35a;
+}
+
+.cancelButton:hover {
+  background: #5a8dee;
+  color: white;
+}

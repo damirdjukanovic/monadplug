@@ -1,0 +1,28 @@
+.profileSettingsCategory {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #475f7b;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.profileSettingsCategory svg {
+  font-size: 1.2rem;
+}
+
+.profileSettingsCategory span {
+  margin-left: 0.4rem;
+}
+
+.clicked {
+  background: #f68f3f;
+  color: #ffff;
+}

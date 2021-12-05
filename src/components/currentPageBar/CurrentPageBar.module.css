@@ -1,0 +1,31 @@
+.currentPage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 25px;
+  width: 100%;
+  box-shadow: -3px 6px 10px 0 rgb(25 42 70 / 13%);
+  border: 1px solid #dfe3e7;
+  font-size: 0.9rem;
+}
+
+.currentPage svg,
+.currentPage span {
+  margin-left: 15px;
+}
+
+.arrows {
+  font-size: 0.8rem !important;
+}
+
+.homeIcon {
+  fill: orange !important;
+}
+
+.currentPage a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
